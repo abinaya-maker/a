@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML, CSS, and Java Example</title>
+    <title>Java Integration Example</title>
     <style>
-        /* CSS Section */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #35424a;
+            background: #35424a;
             color: #ffffff;
             padding: 10px 0;
             text-align: center;
@@ -22,53 +21,38 @@
             padding: 20px;
         }
         footer {
-            background-color: #35424a;
-            color: #ffffff;
             text-align: center;
             padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
             position: relative;
             bottom: 0;
             width: 100%;
         }
-        #output {
-            background: #e4e4e4;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-top: 20px;
-            font-family: monospace;
-        }
     </style>
 </head>
 <body>
-    <!-- HTML Section -->
     <header>
-        <h1>HTML, CSS, and Java Simulation</h1>
+        <h1>Welcome to My FOSS Project</h1>
     </header>
     <main>
-        <h2>Sample Java Program</h2>
-        <p>The following Java program is simulated using JavaScript:</p>
-        <pre>
-<code>
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-</code>
-        </pre>
-        <button onclick="runJavaProgram()">Run Java Program</button>
-        <div id="output"></div>
+        <h2>About this page</h2>
+        <form method="post">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Include Java Logic -->
+        <%
+            String name = request.getParameter("name");
+            if (name != null && !name.isEmpty()) {
+                out.println("<h3>Hello, " + name + "!</h3>");
+            }
+        %>
     </main>
     <footer>
-        <p>Created by Alina</p>
+        <p>Copyright © 2024 My FOSS Project</p>
     </footer>
-    <!-- JavaScript Section -->
-    <script>
-        function runJavaProgram() {
-            // Simulate Java program output using JavaScript
-            const outputDiv = document.getElementById("output");
-            outputDiv.textContent = "Hello, World!";
-        }
-    </script>
 </body>
 </html>
