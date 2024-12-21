@@ -3,100 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To My FOSS Project</title>
-    <style>
-        /* CSS Section */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #35424a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #35424a;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        button {
-            background-color: #35424a;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        button:hover {
-            background-color: #2a383f;
-        }
-
-        #output {
-            background: #e4e4e4;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-top: 10px;
-            font-family: monospace;
-        }
-    </style>
+    <title>FOSS PROJECT</title>
 </head>
 <body>
-    <!-- HTML Section -->
     <header>
-        <h1>Welcome To My FOSS Project</h1>
+        <h1>Welcome To My FOSS project</h1>
     </header>
     <main>
-        <section>
-            <h2>About the Page</h2>
-            <p>This page provides resources for learning web development..</p>
-        </section>
-        <section>
-            <h2>Contact Me</h2>
-            <p>If you have any questions, feel free to contact me at <strong>example@example.com</strong>.</p>
-            <h2>Skills:</h2>
-            <li> HTML </li>
+        <h2>About This Page</h2>
+        <p>This page provides resources for learning web development.</p>
+        <h2>Skills:</h2>
+        <ul>
+            <li>HTML</li>
             <li>CSS</li>
             <li>JAVASCRIPT</li>
-            <h1>KNOWLEDGE IS POWER !....</h1>
-        </section>
-        <section>
-            <h2>Run a Java Program</h2>
-            <p>Click the button below to simulate running a Java program:</p>
-            <button onclick="runJavaProgram()">Run Java Program</button>
-            <div id="output"></div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My FOSS Project. All Rights Reserved.</p>
-    </footer>
-    <script>
-        // JavaScript Section
-        function runJavaProgram() {
-            // Simulate Java program output
-            const outputDiv = document.getElementById("output");
-            outputDiv.textContent = "Output of the Java Program: Hello, World!";
-        }
-    </script>
+        <li>Practical knowledge</li>
+        <h2>Contact me:</h2>
+        <ul>
+            <li>If you have any questions, feel free to contact me at example@example.com. </li>
+
+        <h2>KNOWLEDGE IS POWER !...</h2>
+        </ul>
+        <h2>Login</h2>
+        <input type="text" id="username"
+        class="input-field" placeholder="Enter your Username"></center>
+        <br>
+        <br>
+        <center><input type="password" id="password"
+        class="input-field" placeholder="Enter your password">
+        <br>
+        <br>
+        <button class="button"
+        onclick="login()">Login</button></center>
+        <p id="message" style="color: rgb(41, 222, 222);"></p>
+    </div>
+    </form>
+    <script src="scipt.js"></script>
 </body>
 </html>
