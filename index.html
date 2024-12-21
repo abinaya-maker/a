@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Webpage</title>
+    <title>HTML, CSS, and Java Example</title>
     <style>
+        /* CSS Section */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         header {
-            background: #35424a;
+            background-color: #35424a;
             color: #ffffff;
             padding: 10px 0;
             text-align: center;
@@ -21,44 +22,53 @@
             padding: 20px;
         }
         footer {
+            background-color: #35424a;
+            color: #ffffff;
             text-align: center;
             padding: 10px 0;
-            background: #35424a;
-            color: #ffffff;
             position: relative;
             bottom: 0;
             width: 100%;
         }
+        #output {
+            background: #e4e4e4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            font-family: monospace;
+        }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Welcome to My Foss Project</h1>
-</header>
-
-<main>
-    <h2>About this page</h2>
-    
-    <p>This is about a club where you can learn many new things. you can learn many things which is really helpful. </p>
-
-    <h2>Contacts</h2>
-    
-    <p>You can reach me
-</a>.</p>
-    
-    <h3>Skills:</h3>
-    <li>Web developing</li>
-    <li>Innovative ideas</li>
-    <li>creative thinking</li>
-
-    <h2> Knowledge is power!...</h2>
-    
-</main>
-
-<footer>
-    <p>&copy; 2023 My Simple Webpage</p>
-</footer>
-
+    <!-- HTML Section -->
+    <header>
+        <h1>HTML, CSS, and Java Simulation</h1>
+    </header>
+    <main>
+        <h2>Sample Java Program</h2>
+        <p>The following Java program is simulated using JavaScript:</p>
+        <pre>
+<code>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+</code>
+        </pre>
+        <button onclick="runJavaProgram()">Run Java Program</button>
+        <div id="output"></div>
+    </main>
+    <footer>
+        <p>Created by Alina</p>
+    </footer>
+    <!-- JavaScript Section -->
+    <script>
+        function runJavaProgram() {
+            // Simulate Java program output using JavaScript
+            const outputDiv = document.getElementById("output");
+            outputDiv.textContent = "Hello, World!";
+        }
+    </script>
 </body>
 </html>
